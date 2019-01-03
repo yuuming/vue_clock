@@ -3,7 +3,6 @@ const zeroPadding = (num, digit) => {
   return (Array(digit).join("0") + num).slice(-digit)
 }
  
- 
 export default {
   data() {
     return {
