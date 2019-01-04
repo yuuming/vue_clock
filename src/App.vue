@@ -12,6 +12,8 @@
 </template>
 
 <script>
+import Clock from "@/components/Clock"
+
 </script>
 
 <style scoped>
