@@ -1,12 +1,16 @@
 <template>
   <div>
-    
+    <Clock class="clock"/>
   </div>
 </template>
 
 <script>
-import Clock from "@/components/Clock"
-
+import Clock from "@/components/Clock";
+export default {
+  components: {
+    Clock,
+  },
+}
 </script>
 
 <style scoped>
@@ -14,24 +18,21 @@ import Clock from "@/components/Clock"
   background-color: #3a4a5e;
   padding: 2%;
 }
- 
- 
+
 .date {
   text-align: right;
   color: #fff;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-size: 4rem;
-  letter-spacing: .1em;
-  margin: .0em 0;
+  letter-spacing: 0.1em;
+  margin: 0em 0;
   line-height: 1;
 }
- 
- 
+
 .time {
   display: flex;
 }
- 
- 
+
 .time-item {
   display: flex;
   justify-content: center;
@@ -43,36 +44,32 @@ import Clock from "@/components/Clock"
   padding: 0.5em;
   margin: 3px;
   color: #fff;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 3rem;
   line-height: 1;
   background-color: #48b883;
   box-sizing: border-box;
 }
- 
- 
+
 .time-item:before {
   position: absolute;
   right: 5px;
   bottom: 1px;
   z-index: 1;
   color: #3a4a5e;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   font-size: 1.4rem;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
- 
- 
+
 .hours:before {
   content: "Hours";
 }
- 
- 
+
 .minutes:before {
   content: "Minutes";
 }
- 
- 
+
 .seconds:before {
   content: "Seconds";
 }
