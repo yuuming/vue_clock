@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="container">
+      <p class="location">{{ location }}</p>
       <p class="date">{{ year }}/{{ month }}/{{ day }}</p>
       <div class="time">
         <p class="time-item hours">{{ hours }}</p>
@@ -17,10 +18,10 @@ const zeroPadding = (num, digit) => {
 };
 
 export default {
-    props: ["location", "diff"], 
+  props: ["location", "diff"],
   data() {
     return {
-      date: new Date(),
+      date: new Date()
     };
   },
   computed: {
@@ -48,8 +49,8 @@ export default {
     setInterval(() => this.setDate(), 1000);
   },
   mounted() {
-      this.setDate()
-      setInterval(() => this.setDate(), 1000)
+    this.setDate();
+    setInterval(() => this.setDate(), 1000);
   },
   methods: {
     setDate() {
@@ -65,11 +66,11 @@ export default {
   padding: 2%;
 }
 .location {
-    color: #48b883;
-    font-family: 'Teko', sans-serif;
-    font-size: 5rem;
-    letter-spacing: .05em;
-    line-height: 1;
+  color: #48b883;
+  font-family: "Teko", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 0.05em;
+  line-height: 1;
 }
 .date {
   text-align: right;
