@@ -1,6 +1,7 @@
 <template>
   <div>
-    <Clock class="clock"/>
+    <Clock class="clock" location="TOKYO" :diff="0"/>
+    <Clock class="clock" location="Vancouver" :diff="-17"/>
   </div>
 </template>
 
@@ -8,8 +9,8 @@
 import Clock from "@/components/Clock";
 export default {
   components: {
-    Clock,
-  },
-}
+    Clock
+  }
+};
 </script>
 
