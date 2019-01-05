@@ -55,6 +55,7 @@ export default {
   methods: {
     setDate() {
       this.date = new Date();
+      this.date.setHours(this.date.getHours() + this.diff);
     }
   }
 };
