@@ -64,7 +64,13 @@ export default {
   background-color: #3a4a5e;
   padding: 2%;
 }
-
+.location {
+    color: #48b883;
+    font-family: 'Teko', sans-serif;
+    font-size: 5rem;
+    letter-spacing: .05em;
+    line-height: 1;
+}
 .date {
   text-align: right;
   color: #fff;
