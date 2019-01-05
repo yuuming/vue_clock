@@ -17,9 +17,10 @@ const zeroPadding = (num, digit) => {
 };
 
 export default {
+    props: ["location", "diff"], 
   data() {
     return {
-      date: new Date()
+      date: new Date(),
     };
   },
   computed: {
